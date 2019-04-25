@@ -43,7 +43,11 @@ namespace Assignment2
             Console.WriteLine("Quality: " + qty);
             Console.WriteLine("Image: "+image);
             Console.WriteLine("Describe: "+desc);
-            Console.WriteLine("Gallery: "+gallery);
+            foreach (string image in gallery)
+            {
+                Console.WriteLine("Gallery: "+ image);
+
+            }
         }
 
         public void CheckQty()
